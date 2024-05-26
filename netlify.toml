@@ -1,6 +1,5 @@
 [build]
-  command = "cat _pages/index.md >> _notes/AboutTheGarden.md && jekyll build --trace"
-  command = "bundle exec jekyll build"
+  command = "bundle exec jekyll build && cat _pages/index.md >> _notes/AboutTheGarden.md && jekyll build --trace"
   publish = "_site"
 [build.environment]
   RUBY_VERSION = "3.0.0"
